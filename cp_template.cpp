@@ -1,10 +1,11 @@
-// Gagandeep Singh @ gaganokay
+// Gagandeep Singh
 
 #include <bits/stdc++.h>
 using namespace std;
 
 #define endl '\n'
 #define int long long
+#define sqrt sqrtl
 
 const int MOD = 1e9 + 7;
 const int INF = LLONG_MAX >> 1;
