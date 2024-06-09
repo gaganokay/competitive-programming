@@ -14,6 +14,17 @@ using namespace std;
 #define sortReverse(arr) sort(arr.rbegin(), arr.rend())
 const int mod = 1e9 + 7;
 const int inf = LLONG_MAX >> 1;
+int binpow(int a, int n) {
+    if(n == 0) return 1;
+    if(n%2 == 1) return (a * binpow(a, n-1)) % mod;
+    else {
+        int temp = binpow(a, n/2);
+        return (temp * temp) % mod;
+    }
+}
+int inverse(int x) {
+    return binpow(x, (mod-2));
+}
 
 void solve() {
 }
