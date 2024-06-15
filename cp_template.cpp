@@ -3,6 +3,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#include <ext/pb_ds/assoc_container.hpp>
+using namespace __gnu_pbds;
+typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> ordered_set;
+/*
+    order_of_key (k)
+    find_by_order(k)
+*/
 #define endl '\n'
 #define int long long
 #define float double
@@ -24,6 +31,10 @@ int binpow(int a, int n) {
 }
 int inverse(int x) {
     return binpow(x, (mod-2));
+}
+int gcd(int a, int b) {
+    if(b == 0) return a;
+    else return gcd(b, a % b);
 }
 
 void solve() {
