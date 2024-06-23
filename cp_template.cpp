@@ -14,11 +14,13 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 #define int long long
 #define float double
 #define sqrt sqrtl
+#define setBits(n) __builtin_popcount(n)
 #define inputVector(v, n) for(int i = 0; i < n; i++) cin >> v[i]
 #define input2dArray(arr, n, m) for(int i = 0; i < n; i++) for(int j = 0; j < m; j++) cin >> arr[i][j]
 #define printVector(v, n) for(int i = 0; i < n; i++) cout << v[i] << " "; cout << endl
-#define sort(arr) sort(arr.begin(), arr.end())
-#define sortReverse(arr) sort(arr.rbegin(), arr.rend())
+#define sortVector(arr) sort(arr.begin(), arr.end())
+#define sortVectorReverse(arr) sort(arr.rbegin(), arr.rend())
+#define sumVector(arr) accumulate(arr.begin(), arr.end(), 0)
 const int mod = 1e9 + 7;
 const int inf = LLONG_MAX >> 1;
 int binpow(int a, int n) {
